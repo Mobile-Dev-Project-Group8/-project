@@ -112,6 +112,7 @@ int dimen notification_small_icon_size_as_large 0x7f030014
 int dimen notification_subtext_size 0x7f030015
 int dimen notification_top_pad 0x7f030016
 int dimen notification_top_pad_large_text 0x7f030017
+int drawable abc_vector_test 0x7f04002e
 int drawable cart 0x7f040001
 int drawable common_full_open_on_phone 0x7f040002
 int drawable common_google_signin_btn_icon_dark 0x7f040003
@@ -134,6 +135,7 @@ int drawable common_google_signin_btn_text_light_normal 0x7f040013
 int drawable common_google_signin_btn_text_light_normal_background 0x7f040014
 int drawable googleg_disabled_color_18 0x7f040015
 int drawable googleg_standard_color_18 0x7f040016
+int drawable ic_100tb 0x7f04002f
 int drawable ic_bell 0x7f040017
 int drawable ic_dotmenu 0x7f040018
 int drawable ic_grid 0x7f040019
@@ -214,6 +216,7 @@ int id center_vertical 0x7f050035
 int id chronometer 0x7f050036
 int id clip_horizontal 0x7f050037
 int id clip_vertical 0x7f050038
+int id coil_request_manager 0x7f050076
 int id compose_view_saveable_id_tag 0x7f050039
 int id dark 0x7f05003a
 int id dialog_button 0x7f05003b
@@ -332,6 +335,7 @@ int string selected 0x7f0a0024
 int string status_bar_notification_info_overflow 0x7f0a0025
 int string tab 0x7f0a0026
 int string template_percent 0x7f0a0027
+int string title_activity_item_details 0x7f0a002a
 int style DialogWindowTheme 0x7f0b0000
 int style TextAppearance_Compat_Notification 0x7f0b0001
 int style TextAppearance_Compat_Notification_Info 0x7f0b0002
@@ -348,6 +352,21 @@ int styleable ActivityNavigator_action 1
 int styleable ActivityNavigator_data 2
 int styleable ActivityNavigator_dataPattern 3
 int styleable ActivityNavigator_targetPackage 4
+int[] styleable AnimatedStateListDrawableCompat { 0x0101011c, 0x01010194, 0x01010195, 0x01010196, 0x0101030c, 0x0101030d }
+int styleable AnimatedStateListDrawableCompat_android_dither 0
+int styleable AnimatedStateListDrawableCompat_android_visible 1
+int styleable AnimatedStateListDrawableCompat_android_variablePadding 2
+int styleable AnimatedStateListDrawableCompat_android_constantSize 3
+int styleable AnimatedStateListDrawableCompat_android_enterFadeDuration 4
+int styleable AnimatedStateListDrawableCompat_android_exitFadeDuration 5
+int[] styleable AnimatedStateListDrawableItem { 0x010100d0, 0x01010199 }
+int styleable AnimatedStateListDrawableItem_android_id 0
+int styleable AnimatedStateListDrawableItem_android_drawable 1
+int[] styleable AnimatedStateListDrawableTransition { 0x01010199, 0x01010449, 0x0101044a, 0x0101044b }
+int styleable AnimatedStateListDrawableTransition_android_drawable 0
+int styleable AnimatedStateListDrawableTransition_android_toId 1
+int styleable AnimatedStateListDrawableTransition_android_fromId 2
+int styleable AnimatedStateListDrawableTransition_android_reversible 3
 int[] styleable Capability { 0x7f01002c, 0x7f010030 }
 int styleable Capability_queryPatterns 0
 int styleable Capability_shortcutMatchRequired 1
@@ -450,3 +469,12 @@ int[] styleable SignInButton { 0x7f010003, 0x7f010005, 0x7f01002f }
 int styleable SignInButton_buttonSize 0
 int styleable SignInButton_colorScheme 1
 int styleable SignInButton_scopeUris 2
+int[] styleable StateListDrawable { 0x0101011c, 0x01010194, 0x01010195, 0x01010196, 0x0101030c, 0x0101030d }
+int styleable StateListDrawable_android_dither 0
+int styleable StateListDrawable_android_visible 1
+int styleable StateListDrawable_android_variablePadding 2
+int styleable StateListDrawable_android_constantSize 3
+int styleable StateListDrawable_android_enterFadeDuration 4
+int styleable StateListDrawable_android_exitFadeDuration 5
+int[] styleable StateListDrawableItem { 0x01010199 }
+int styleable StateListDrawableItem_android_drawable 0
