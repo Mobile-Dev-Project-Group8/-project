@@ -29,4 +29,5 @@ sealed class BottomBarScreen(
         icon = Icons.Default.Settings
     )
     object RList:BottomBarScreen("r_screen","", icon = Icons.Default.Home)
+    object ListDetails:BottomBarScreen("r_details","", icon = Icons.Default.Home)
 }

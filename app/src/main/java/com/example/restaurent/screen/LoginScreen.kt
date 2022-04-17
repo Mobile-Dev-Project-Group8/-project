@@ -189,13 +189,14 @@ fun LoginScreen(
 
         when(state.status) {
             LoadingState.Status.SUCCESS -> {
-                Toast.makeText(
-                    context,
-                    "Welcome",
-                    Toast.LENGTH_SHORT
-                ).show()
+
 
                 LaunchedEffect(Unit) {
+                    Toast.makeText(
+                        context,
+                        "Welcome",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     navController.navigate(route = ScreenNavigate.MainScreen1.route )
                 }
                 Text(text = "Success")

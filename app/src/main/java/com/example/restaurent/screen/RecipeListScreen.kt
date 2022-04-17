@@ -1,5 +1,7 @@
 package com.example.restaurent.screen
 
+import android.content.Intent
+import android.widget.Toast
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.clickable
@@ -13,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -21,6 +24,9 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavController
+import com.example.restaurent.BottomBarScreen
+import com.example.restaurent.ItemDetails
 import com.example.restaurent.R
 import com.example.restaurent.model.Recipe
 import com.example.restaurent.repo.RestaurentRepo
@@ -32,10 +38,13 @@ import kotlinx.coroutines.flow.asStateFlow
 
 @Composable
 fun RecipeListScreen(
+    navController: NavController,
+
     restaurentViewModel: RestaurentViewModel = viewModel(
         factory = RestaurentViewModelFactory(RestaurentRepo())
     )
 ) {
+
 
     when (val booksList = restaurentViewModel.recipesStateFlow.asStateFlow().collectAsState().value) {
 
@@ -62,7 +71,7 @@ fun RecipeListScreen(
                                     .padding(16.dp),
                                 shape = RoundedCornerShape(16.dp)
                             ) {
-                                RecipeDetails(it)
+                                RecipeDetails(it,navController)
                             }
                         }
                     }
@@ -73,7 +82,9 @@ fun RecipeListScreen(
 }
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
-fun RecipeDetails(book: Recipe) {
+fun RecipeDetails(book: Recipe,navController: NavController) {
+    val context = LocalContext.current
+
     var showBookDescription by remember { mutableStateOf(false) }
     val bookCoverImageSize by animateDpAsState(
         targetValue =
@@ -81,27 +92,32 @@ fun RecipeDetails(book: Recipe) {
     )
 
     Column(modifier = Modifier.clickable {
-        showBookDescription = showBookDescription.not()
+        val intent = Intent(context, ItemDetails::class.java)
+
+        intent.putExtra("Name", ""+book.name)
+        intent.putExtra("Des", ""+book.des)
+        intent.putExtra("ImageUrl", ""+book.imageURL)
+        intent.putExtra("Price", ""+book.price)
+
+        context.startActivity(intent)
+
+
+        //navController.navigate(route = BottomBarScreen.ListDetails.route )
+
     }) {
         Row(modifier = Modifier.padding(12.dp)) {
             val cc=book.imageURL.trim()
 
             GlideImage(
                 imageModel = book.imageURL,
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(bookCoverImageSize),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.size(height = 150.dp, width = 150.dp),
 
                 placeHolder = ImageBitmap.imageResource(R.drawable.picture),
                 error = ImageBitmap.imageResource(R.drawable.picture)
             )
-//            Image(
-//                painter = rememberImagePainter(cc),
-//                contentDescription = "Recipe cover page",
-//
-//                contentScale = ContentScale.Fit,
-//                modifier = Modifier.size(bookCoverImageSize)
-//            )
 
+            Spacer(Modifier.size(16.dp))
 
             Column {
                 Text(
@@ -112,7 +128,7 @@ fun RecipeDetails(book: Recipe) {
                 )
 
                 Text(
-                    text = book.price, style = TextStyle(
+                    text = "Price :"+book.price, style = TextStyle(
                         fontWeight = FontWeight.Light,
                         fontSize = 12.sp
                     )
@@ -120,15 +136,7 @@ fun RecipeDetails(book: Recipe) {
             }
         }
 
-//        AnimatedVisibility(visible = showBookDescription) {
-//            Text(
-//                text = book.des, style = TextStyle(
-//                    fontWeight = FontWeight.SemiBold,
-//                    fontStyle = FontStyle.Italic
-//                ),
-//                modifier = Modifier.padding(start = 24.dp, end = 24.dp, bottom = 16.dp)
-//            )
-//        }
+
     }
 
 }
@@ -144,3 +152,4 @@ class RestaurentViewModelFactory(private val restaurentRepo: RestaurentRepo) : V
     }
 
 }
+

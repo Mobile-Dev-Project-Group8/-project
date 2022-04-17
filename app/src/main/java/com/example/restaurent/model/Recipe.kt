@@ -1,5 +1,6 @@
 package com.example.restaurent.model
 
+
 data class Recipe (
 //    val title: String? = null,
 //    val ratting: String? = null,
