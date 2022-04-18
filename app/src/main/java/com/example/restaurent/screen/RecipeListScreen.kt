@@ -1,7 +1,6 @@
 package com.example.restaurent.screen
 
 import android.content.Intent
-import android.widget.Toast
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.clickable
@@ -25,8 +24,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.example.restaurent.BottomBarScreen
-import com.example.restaurent.ItemDetails
 import com.example.restaurent.R
 import com.example.restaurent.model.Recipe
 import com.example.restaurent.repo.RestaurentRepo
@@ -38,7 +35,7 @@ import kotlinx.coroutines.flow.asStateFlow
 
 @Composable
 fun RecipeListScreen(
-    navController: NavController,
+
 
     restaurentViewModel: RestaurentViewModel = viewModel(
         factory = RestaurentViewModelFactory(RestaurentRepo())
@@ -71,7 +68,7 @@ fun RecipeListScreen(
                                     .padding(16.dp),
                                 shape = RoundedCornerShape(16.dp)
                             ) {
-                                RecipeDetails(it,navController)
+                                RecipeDetails(it)
                             }
                         }
                     }
@@ -82,7 +79,7 @@ fun RecipeListScreen(
 }
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
-fun RecipeDetails(book: Recipe,navController: NavController) {
+fun RecipeDetails(book: Recipe) {
     val context = LocalContext.current
 
     var showBookDescription by remember { mutableStateOf(false) }

@@ -35,4 +35,5 @@ string google_storage_bucket
 string project_id
 string title_activity_cart
 string title_activity_item_details
+string title_activity_list
 style Theme.Restaurent

@@ -29,7 +29,7 @@ fun BottomNavGraph(navController: NavHostController) {
         composable(
             route = BottomBarScreen.RList.route
         ){
-            RecipeListScreen(navController = navController)
+            RecipeListScreen()
         }
         composable(
             route = BottomBarScreen.ListDetails.route,

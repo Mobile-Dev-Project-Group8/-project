@@ -7,8 +7,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.Arrangement.Absolute.Center
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -19,20 +17,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.restaurent.BottomBarScreen
-import com.example.restaurent.ItemDetails
 import com.example.restaurent.R
-import com.example.restaurent.ScreenNavigate
 
 
 @Composable
@@ -126,7 +120,9 @@ fun HomeScreen(navController: NavController) {
                             TextButton(onClick = {
 
                                 //addd
-                                navController.navigate(route = BottomBarScreen.RList.route )
+                                //navController.navigate(route = BottomBarScreen.RList.route )
+                                val intent = Intent(context,ListActivity::class.java)
+                                context.startActivity(intent)
 
 
                             },

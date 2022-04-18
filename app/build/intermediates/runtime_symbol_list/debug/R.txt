@@ -341,6 +341,7 @@ int string tab 0x7f0a0026
 int string template_percent 0x7f0a0027
 int string title_activity_cart 0x7f0a002b
 int string title_activity_item_details 0x7f0a002a
+int string title_activity_list 0x7f0a002c
 int style DialogWindowTheme 0x7f0b0000
 int style TextAppearance_Compat_Notification 0x7f0b0001
 int style TextAppearance_Compat_Notification_Info 0x7f0b0002

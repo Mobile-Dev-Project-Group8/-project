@@ -6,14 +6,15 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
@@ -26,6 +27,7 @@ import com.example.restaurent.MainActivity
 import com.example.restaurent.R
 import com.example.restaurent.ScreenNavigate
 import com.example.restaurent.ui.theme.Purple700
+import com.example.restaurent.ui.theme.white
 import com.example.restaurent.ui.theme.yellowColor
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.delay
@@ -68,17 +70,27 @@ fun Splash(alpha: Float) {
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
+        Column() {
+            Image(
+                painterResource(id = R.drawable.food),
+                contentDescription = "",
+                contentScale = ContentScale.Fit,
+                modifier = Modifier
+                    .size(120.dp)
+                    .alpha(alpha = alpha),
+
+                )
+            Text(
+                text = "Restaurant",
+                color = white,
+                style = MaterialTheme.typography.button,
+                modifier = Modifier.align(CenterHorizontally)
+            )
+
+        }
 
 
-        Image(
-            painterResource(id = R.drawable.food),
-            contentDescription = "",
-            contentScale = ContentScale.Fit,
-            modifier = Modifier
-                .size(120.dp)
-                .alpha(alpha = alpha),
 
-        )
     }
 }
 

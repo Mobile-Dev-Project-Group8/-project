@@ -342,6 +342,7 @@ string tab
 string template_percent
 string title_activity_cart
 string title_activity_item_details
+string title_activity_list
 style DialogWindowTheme
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
