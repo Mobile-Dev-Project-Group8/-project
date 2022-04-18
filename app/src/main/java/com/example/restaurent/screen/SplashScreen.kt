@@ -68,12 +68,12 @@ fun Splash(alpha: Float) {
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        
+
 
         Image(
-            painterResource(id = R.drawable.fastfood),
+            painterResource(id = R.drawable.food),
             contentDescription = "",
-            contentScale = ContentScale.Crop,
+            contentScale = ContentScale.Fit,
             modifier = Modifier
                 .size(120.dp)
                 .alpha(alpha = alpha),

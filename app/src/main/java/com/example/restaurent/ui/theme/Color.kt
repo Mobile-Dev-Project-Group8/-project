@@ -31,7 +31,7 @@ val lightgraybg=Color(0xffF8F8F8)
 val lightsilverbox = Color(0xffF6F6F6)
 
 val iconColor = Color(0xffa8a09b)
-val yellowColor = Color(0xfffbba01)
+val yellowColor = Color(0xFFDFC16C)
 
 val black = Color(0xff20262C)
 val lightblack = Color(0xff5F5F60)

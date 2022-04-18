@@ -231,7 +231,7 @@ fun ProfileSection(){
                 .padding(horizontal = 20.dp)
         ) {
             RoundImage(
-                image = painterResource(id = R.drawable.ic_launcher_background),
+                image = painterResource(id = R.drawable.food),
                 modifier = Modifier
                     .size(100.dp)
                     .weight(3f)

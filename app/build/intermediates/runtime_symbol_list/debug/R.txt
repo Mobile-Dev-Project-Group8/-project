@@ -77,6 +77,7 @@ int color common_google_signin_btn_text_light_disabled 0x7f02000e
 int color common_google_signin_btn_text_light_focused 0x7f02000f
 int color common_google_signin_btn_text_light_pressed 0x7f020010
 int color common_google_signin_btn_tint 0x7f020011
+int color ic_launcher_background 0x7f02001e
 int color notification_action_color_filter 0x7f020012
 int color notification_icon_bg_color 0x7f020013
 int color purple_200 0x7f020014
@@ -135,6 +136,7 @@ int drawable common_google_signin_btn_text_light_focused 0x7f040012
 int drawable common_google_signin_btn_text_light_normal 0x7f040013
 int drawable common_google_signin_btn_text_light_normal_background 0x7f040014
 int drawable fastfood 0x7f040031
+int drawable food 0x7f040032
 int drawable googleg_disabled_color_18 0x7f040015
 int drawable googleg_standard_color_18 0x7f040016
 int drawable ic_100tb 0x7f04002f
@@ -142,7 +144,6 @@ int drawable ic_bell 0x7f040017
 int drawable ic_dotmenu 0x7f040018
 int drawable ic_grid 0x7f040019
 int drawable ic_igtv 0x7f04001a
-int drawable ic_launcher_background 0x7f04001b
 int drawable ic_launcher_foreground 0x7f04001c
 int drawable ic_profile 0x7f04001d
 int drawable ic_reels 0x7f04001e
@@ -294,6 +295,7 @@ int layout notification_template_part_time 0x7f070008
 int menu example_menu 0x7f080000
 int menu example_menu2 0x7f080001
 int mipmap ic_launcher 0x7f090000
+int mipmap ic_launcher_foreground 0x7f090002
 int mipmap ic_launcher_round 0x7f090001
 int string androidx_startup 0x7f0a0000
 int string app_name 0x7f0a0001

@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color ic_launcher_background
 color purple_200
 color purple_500
 color purple_700
@@ -10,11 +11,11 @@ color ttt
 color white
 drawable cart
 drawable fastfood
+drawable food
 drawable ic_bell
 drawable ic_dotmenu
 drawable ic_grid
 drawable ic_igtv
-drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_profile
 drawable ic_reels
@@ -22,6 +23,7 @@ drawable menu
 drawable picture
 drawable restaurent
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 string default_web_client_id
