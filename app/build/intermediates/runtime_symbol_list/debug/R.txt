@@ -85,6 +85,7 @@ int color purple_700 0x7f020016
 int color teal_200 0x7f020017
 int color teal_700 0x7f020018
 int color triangle_color 0x7f02001a
+int color ttt 0x7f02001d
 int color vector_tint_color 0x7f02001b
 int color vector_tint_theme_color 0x7f02001c
 int color white 0x7f020019

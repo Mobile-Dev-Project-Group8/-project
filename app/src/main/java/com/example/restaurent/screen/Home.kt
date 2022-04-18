@@ -7,15 +7,19 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement.Absolute.Center
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -43,7 +47,7 @@ fun HomeScreen(navController: NavController) {
             .background(Color(0xFFFEFEFA))
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(32.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = CenterHorizontally
     ) {
 
         HomeTopBar(name = "Home",modifier = Modifier.padding(16.dp))
@@ -75,12 +79,17 @@ fun HomeScreen(navController: NavController) {
 
         Card(
             elevation = 4.dp,
-            modifier = Modifier.height(260.dp)
+            modifier = Modifier
+                .height(260.dp)
+                .align(CenterHorizontally),
+
+
         ) {
 
             Image(painter = painterResource(id = R.drawable.menu), contentDescription = null)
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
+                horizontalAlignment = CenterHorizontally,
+                verticalArrangement = Arrangement.Center,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(20.dp)
@@ -93,30 +102,40 @@ fun HomeScreen(navController: NavController) {
                     horizontalArrangement = Arrangement.Center,
                 ) {
                     Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
+                        horizontalAlignment = CenterHorizontally,
+
+
                         modifier = Modifier
                             .border(1.dp, Color.Red, RectangleShape)
                             .fillMaxWidth()
                             .padding(20.dp)) {
+
                         TextButton(onClick = {
+
 
 
                         },
                             modifier = Modifier.fillMaxWidth(),
-                            colors = ButtonDefaults.buttonColors(backgroundColor = Color.Yellow)) {
+                            colors = ButtonDefaults.buttonColors(backgroundColor = Color.LightGray)) {
                             Text(text = "Menu", color = Color.Black)
                         }
-                        TextButton(onClick = {
-
-                            //addd
-                            navController.navigate(route = BottomBarScreen.RList.route )
 
 
-                        },
-                            modifier = Modifier.fillMaxWidth(),
-                            colors = ButtonDefaults.buttonColors(backgroundColor = Color.Yellow)) {
-                            Text(text = "Click", color = Color.Black)
-                        }
+
+
+                            TextButton(onClick = {
+
+                                //addd
+                                navController.navigate(route = BottomBarScreen.RList.route )
+
+
+                            },
+                                modifier = Modifier.fillMaxWidth(),
+                                colors = ButtonDefaults.buttonColors(backgroundColor = Color.LightGray)) {
+                                Text(text = "Click", color = Color.Black)
+                            }
+
+                    }
 
                     }
 
@@ -127,7 +146,7 @@ fun HomeScreen(navController: NavController) {
             }
         }
     }
-}
+
 
 @Composable
 fun MainContent(navController1: NavHostController){
@@ -196,7 +215,7 @@ fun HomeSection(navController:NavHostController){
             .background(Color(0xFFFEFEFA))
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(32.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = CenterHorizontally
     ) {
 
         Card(
@@ -231,7 +250,7 @@ fun HomeSection(navController:NavHostController){
 
             Image(painter = painterResource(id = R.drawable.menu), contentDescription = null)
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
+                horizontalAlignment = CenterHorizontally,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(20.dp)
@@ -244,7 +263,7 @@ fun HomeSection(navController:NavHostController){
                     horizontalArrangement = Arrangement.Center,
                 ) {
                     Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
+                        horizontalAlignment = CenterHorizontally,
                         modifier = Modifier
                             .border(1.dp, Color.Red, RectangleShape)
                             .fillMaxWidth()

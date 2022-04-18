@@ -204,11 +204,14 @@ fun LoginScreen(
 
             }
             LoadingState.Status.FAILED -> {
-                Toast.makeText(
-                    context,
-                    ""+state.msg,
-                    Toast.LENGTH_SHORT
-                ).show()
+                LaunchedEffect(Unit) {
+                    Toast.makeText(
+                        context,
+                        ""+state.msg,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                   }
+
 
                 Text(text = state.msg ?: "Error")
             }

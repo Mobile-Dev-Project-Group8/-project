@@ -86,6 +86,7 @@ color purple_700
 color teal_200
 color teal_700
 color triangle_color
+color ttt
 color vector_tint_color
 color vector_tint_theme_color
 color white
