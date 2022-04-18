@@ -39,25 +39,26 @@ class CartActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             RestaurentTheme {
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .fillMaxSize()
-                            .padding(30.dp)
-                    ) {
-                        //TopAppBarHeader()
-                        Spacer(modifier = Modifier.padding(5.dp))
-                        DeleteCart()
-                        Spacer(modifier = Modifier.padding(20.dp))
-                        CartItemList()
-                        Spacer(modifier = Modifier.padding(20.dp))
-                        NextButtonWithTotalItems()
-                    }
-                }
+                CardScreen()
+//                Box(
+//                    modifier = Modifier
+//                        .fillMaxSize()
+//                        .verticalScroll(rememberScrollState())
+//                ) {
+//                    Column(
+//                        modifier = Modifier
+//                            .fillMaxSize()
+//                            .padding(30.dp)
+//                    ) {
+//                        //TopAppBarHeader()
+//                        Spacer(modifier = Modifier.padding(5.dp))
+//                        DeleteCart()
+//                        Spacer(modifier = Modifier.padding(20.dp))
+//                        CartItemList()
+//                        Spacer(modifier = Modifier.padding(20.dp))
+//                        NextButtonWithTotalItems()
+//                    }
+//                }
 
             }
         }
