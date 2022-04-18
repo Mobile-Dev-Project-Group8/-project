@@ -293,6 +293,21 @@
             ]
         },
         {
+            "outputFile": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\values-v16_values-v16.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\06447e937f7dbca2aae39558200bc2b0\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\values-et_values-et.arsc.flat",
             "map": [
                 {
@@ -361,21 +376,6 @@
                         "startOffsets": "105,198,2496,2592,2687,2769,2847,2945,3036,3120,3188,3254,3427,3498",
                         "endColumns": "92,79,95,94,81,77,97,90,83,67,65,71,70,121",
                         "endOffsets": "193,273,2587,2682,2764,2842,2940,3031,3115,3183,3249,3321,3493,3615"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\values-v16_values-v16.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\06447e937f7dbca2aae39558200bc2b0\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]
@@ -3897,11 +3897,11 @@
                 {
                     "source": "G:\\projectjp\\project\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,4",
-                        "startColumns": "-1,-1,-1,4",
-                        "startOffsets": "-1,-1,-1,193",
-                        "endColumns": "-1,-1,-1,60",
-                        "endOffsets": "-1,-1,-1,249"
+                        "startLines": "1,-1,-1,-1",
+                        "startColumns": "4,-1,-1,-1",
+                        "startOffsets": "16,-1,-1,-1",
+                        "endColumns": "47,-1,-1,-1",
+                        "endOffsets": "59,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "124,165,166,167",

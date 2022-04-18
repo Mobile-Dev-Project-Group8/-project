@@ -1,10 +1,9 @@
 package com.example.restaurent.screen
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
@@ -14,18 +13,22 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import coil.compose.rememberAsyncImagePainter
-import com.example.restaurent.screen.ActionButton
+import com.example.restaurent.model.Cart
+
 import com.example.restaurent.ui.theme.RestaurentTheme
 import com.example.restaurent.ui.theme.orange
 import com.example.restaurent.ui.theme.white
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 
 class ItemDetails : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +42,9 @@ class ItemDetails : ComponentActivity() {
                 val Des = intent.getStringExtra("Des")
                 val Price = intent.getStringExtra("Price")
                 val ImageUrl = intent.getStringExtra("ImageUrl")
+
+
+
 
 
                 Column(modifier = Modifier.fillMaxSize()) {
@@ -127,8 +133,27 @@ class ItemDetails : ComponentActivity() {
 //
 //
 //                        )
+
                         Button(
                             onClick = {
+                                val cart = Cart(
+                                    Firebase.auth.uid.toString(),
+                                    name.toString(),
+                                    ImageUrl.toString(),
+                                    Price.toString()
+
+                                )
+
+                                val firestore = FirebaseFirestore.getInstance()
+                                val collection = firestore.collection("cart").document(Firebase.auth.uid.toString()).collection("cart")
+                                collection.add(cart)
+                                Toast
+                                    .makeText(
+                                        context,
+                                        "Added This Product",
+                                        Toast.LENGTH_SHORT
+                                    )
+                                    .show()
                             },
                             colors = ButtonDefaults.buttonColors(backgroundColor = orange),
                             modifier = Modifier

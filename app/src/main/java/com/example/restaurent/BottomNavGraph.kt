@@ -31,13 +31,7 @@ fun BottomNavGraph(navController: NavHostController) {
         ){
             RecipeListScreen()
         }
-        composable(
-            route = BottomBarScreen.ListDetails.route,
-           // arguments = listOf(navArgument("recipe"){type= NavType.ParcelableType(Recipe::class.java)})
-        ){
-            RecipeDetails1()
 
-        }
 
     }
 }

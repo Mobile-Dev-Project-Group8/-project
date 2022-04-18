@@ -54,7 +54,7 @@ fun RecipeListScreen(
             listOfBooks?.let {
                 Column {
                     Text(
-                        text = "Recipe",
+                        text = "Restaurant Menu",
                         style = TextStyle(fontSize = 28.sp, fontWeight = FontWeight.ExtraBold),
                         modifier = Modifier.padding(16.dp)
                     )
@@ -109,6 +109,7 @@ fun RecipeDetails(book: Recipe) {
                 imageModel = book.imageURL,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.size(height = 150.dp, width = 150.dp),
+
 
                 placeHolder = ImageBitmap.imageResource(R.drawable.picture),
                 error = ImageBitmap.imageResource(R.drawable.picture)

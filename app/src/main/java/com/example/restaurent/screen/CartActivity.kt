@@ -78,15 +78,6 @@ fun DeleteCart() {
                 withStyle(style = ParagraphStyle(lineHeight = 30.sp)) {
                     withStyle(
                         style = SpanStyle(
-                            color = subTitleTextColor,
-                            fontSize = 24.sp
-                        )
-                    ) {
-                        append("Shopping\n")
-                    }
-                    withStyle(
-                        style = SpanStyle(
-                            fontWeight = FontWeight.Bold,
                             color = titleTextColor,
                             fontSize = 24.sp
                         )
@@ -94,18 +85,19 @@ fun DeleteCart() {
                         append("Cart")
                     }
 
+
                 }
             }
         )
 
-        IconButton(onClick = { }) {
-            Icon(
-                imageVector = Icons.Outlined.Delete,
-                contentDescription = "",
-                tint = orange
-            )
-
-        }
+//        IconButton(onClick = { }) {
+//            Icon(
+//                imageVector = Icons.Outlined.Delete,
+//                contentDescription = "",
+//                tint = orange
+//            )
+//
+//        }
     }
 }
 

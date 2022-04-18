@@ -190,11 +190,11 @@
                 {
                     "source": "G:\\projectjp\\project\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,4",
-                        "startColumns": "-1,-1,-1,4",
-                        "startOffsets": "-1,-1,-1,193",
-                        "endColumns": "-1,-1,-1,60",
-                        "endOffsets": "-1,-1,-1,249"
+                        "startLines": "1,-1,-1,-1",
+                        "startColumns": "4,-1,-1,-1",
+                        "startOffsets": "16,-1,-1,-1",
+                        "endColumns": "47,-1,-1,-1",
+                        "endOffsets": "59,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "124,165,166,167",

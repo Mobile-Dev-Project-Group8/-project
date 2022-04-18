@@ -9,7 +9,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="ttt">#F4A606</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Restaurent</string>
+    <string name="app_name">Restaurant</string>
     <string name="default_web_client_id" translatable="false">789112290305-5oscdsol2tg3ctu4cgeu82o049ueicl8.apps.googleusercontent.com</string>
     <string name="gcm_defaultSenderId" translatable="false">789112290305</string>
     <string name="google_api_key" translatable="false">AIzaSyDpqMDjQjHlC5B6yxwVhUITQet_GkREdqw</string>
