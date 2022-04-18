@@ -134,6 +134,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable fastfood
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_100tb
@@ -336,6 +337,7 @@ string selected
 string status_bar_notification_info_overflow
 string tab
 string template_percent
+string title_activity_cart
 string title_activity_item_details
 style DialogWindowTheme
 style TextAppearance_Compat_Notification

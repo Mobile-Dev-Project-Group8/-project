@@ -1,9 +1,11 @@
 package com.example.restaurent.screen
 
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -24,16 +26,18 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.restaurent.BottomBarScreen
+import com.example.restaurent.ItemDetails
 import com.example.restaurent.R
 import com.example.restaurent.ScreenNavigate
 
 
 @Composable
 fun HomeScreen(navController: NavController) {
-    HomeTopBar(name = "Home",modifier = Modifier.padding(16.dp))
-    Spacer(modifier = Modifier.height(4.dp))
+
+
     val context = LocalContext.current
     Column(
+
         modifier = Modifier
             .fillMaxSize()
             .background(Color(0xFFFEFEFA))
@@ -42,6 +46,8 @@ fun HomeScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
+        HomeTopBar(name = "Home",modifier = Modifier.padding(16.dp))
+        Spacer(modifier = Modifier.height(4.dp))
         Card(
             elevation = 4.dp,
         ) {
@@ -151,6 +157,7 @@ fun HomeTopBar(
         modifier = modifier
             .fillMaxWidth()
     ) {
+        val context = LocalContext.current
         Icon(
             imageVector = Icons.Default.ArrowBack,
             contentDescription = "Back",
@@ -171,6 +178,10 @@ fun HomeTopBar(
             modifier = Modifier
                 .width(25.dp)
                 .height(25.dp)
+                .clickable {
+                    val intent = Intent(context, CartActivity::class.java)
+                    context.startActivity(intent)
+                }
         )
     }
 }

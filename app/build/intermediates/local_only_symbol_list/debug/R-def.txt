@@ -8,6 +8,7 @@ color teal_200
 color teal_700
 color white
 drawable cart
+drawable fastfood
 drawable ic_bell
 drawable ic_dotmenu
 drawable ic_grid
@@ -29,5 +30,6 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
+string title_activity_cart
 string title_activity_item_details
 style Theme.Restaurent

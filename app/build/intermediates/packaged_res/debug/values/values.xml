@@ -15,6 +15,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDpqMDjQjHlC5B6yxwVhUITQet_GkREdqw</string>
     <string name="google_storage_bucket" translatable="false">restaurent-d6edb.appspot.com</string>
     <string name="project_id" translatable="false">restaurent-d6edb</string>
+    <string name="title_activity_cart">CartActivity</string>
     <string name="title_activity_item_details">ItemDetails</string>
     <style name="Theme.Restaurent" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
