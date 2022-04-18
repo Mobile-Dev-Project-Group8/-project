@@ -60,6 +60,10 @@
         "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_bell.png"
     },
     {
+        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_fastfood.jpg.flat",
+        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\fastfood.jpg"
+    },
+    {
         "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_profile.xml.flat",
         "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_profile.xml"
     },

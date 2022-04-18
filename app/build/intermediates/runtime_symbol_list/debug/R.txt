@@ -133,6 +133,7 @@ int drawable common_google_signin_btn_text_light 0x7f040011
 int drawable common_google_signin_btn_text_light_focused 0x7f040012
 int drawable common_google_signin_btn_text_light_normal 0x7f040013
 int drawable common_google_signin_btn_text_light_normal_background 0x7f040014
+int drawable fastfood 0x7f040031
 int drawable googleg_disabled_color_18 0x7f040015
 int drawable googleg_standard_color_18 0x7f040016
 int drawable ic_100tb 0x7f04002f
@@ -335,6 +336,7 @@ int string selected 0x7f0a0024
 int string status_bar_notification_info_overflow 0x7f0a0025
 int string tab 0x7f0a0026
 int string template_percent 0x7f0a0027
+int string title_activity_cart 0x7f0a002b
 int string title_activity_item_details 0x7f0a002a
 int style DialogWindowTheme 0x7f0b0000
 int style TextAppearance_Compat_Notification 0x7f0b0001
