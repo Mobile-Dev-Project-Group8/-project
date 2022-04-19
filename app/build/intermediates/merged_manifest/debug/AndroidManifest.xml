@@ -23,12 +23,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.Restaurent" >
         <activity
+            android:name="com.example.restaurent.screen.OrderPlaceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_order_place"
+            android:theme="@style/Theme.Restaurent" />
+        <activity
+            android:name="com.example.restaurent.screen.ListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.Restaurent" />
+        <activity
             android:name="com.example.restaurent.screen.CartActivity"
             android:exported="false"
             android:label="@string/title_activity_cart"
             android:theme="@style/Theme.Restaurent" />
         <activity
-            android:name="com.example.restaurent.ItemDetails"
+            android:name="com.example.restaurent.screen.ItemDetails"
             android:exported="false"
             android:label="@string/title_activity_item_details"
             android:theme="@style/Theme.Restaurent" />

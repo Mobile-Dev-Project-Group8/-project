@@ -21,7 +21,7 @@ fun BottomNavGraph(navController: NavHostController) {
             HomeScreen(navController = navController)
         }
         composable(route = BottomBarScreen.Profile.route) {
-            ProfileScreen()
+            ProfileScreen(navController = navController)
         }
         composable(route = BottomBarScreen.Settings.route) {
             SettingsScreen()
@@ -29,15 +29,9 @@ fun BottomNavGraph(navController: NavHostController) {
         composable(
             route = BottomBarScreen.RList.route
         ){
-            RecipeListScreen(navController = navController)
+            RecipeListScreen()
         }
-        composable(
-            route = BottomBarScreen.ListDetails.route,
-           // arguments = listOf(navArgument("recipe"){type= NavType.ParcelableType(Recipe::class.java)})
-        ){
-            RecipeDetails1()
 
-        }
 
     }
 }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.github.skydoves:landscapist-glide:1.5.1] C:\Users\disah\.gradle\caches\transforms-3\ef2716738c4b602ca95548c542b15db2\transformed\landscapist-glide-1.5.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.skydoves:landscapist:1.5.1] C:\Users\disah\.gradle\caches\transforms-3\68a22db86fb753b69e91a844fe76adaf\transformed\landscapist-1.5.1\AndroidManifest.xml:2:1-9:12
 MERGED from [io.coil-kt:coil-compose:2.0.0-rc01] C:\Users\disah\.gradle\caches\transforms-3\3db95cf86225985e7e8050d9dacaf2d6\transformed\coil-compose-2.0.0-rc01\AndroidManifest.xml:2:1-9:12
@@ -102,20 +102,20 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\disah\.gradle\cache
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\disah\.gradle\caches\transforms-3\1b9a1f15be98ebe2874c21d657dc38b3\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\disah\.gradle\caches\transforms-3\d3f4edd0bed8f63c6f4d5964a62541d4\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\disah\.gradle\caches\transforms-3\a71b4a907d0772513549ec28796bfda4\transformed\grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
-INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml
 		INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:1-49:12
 		INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:2:11-69
@@ -146,7 +146,7 @@ ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:7:5-76
 	android:name
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:7:22-73
 application
-ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:9:5-37:19
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:9:5-47:19
 MERGED from [androidx.compose.ui:ui-tooling:1.0.1] C:\Users\disah\.gradle\caches\transforms-3\a712bc8c3eaf86f5a04ca90e28fb1e39\transformed\ui-tooling-1.0.1\AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.compose.ui:ui-tooling:1.0.1] C:\Users\disah\.gradle\caches\transforms-3\a712bc8c3eaf86f5a04ca90e28fb1e39\transformed\ui-tooling-1.0.1\AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.1.0] C:\Users\disah\.gradle\caches\transforms-3\276907963ef486de6781b7e0d7a01862\transformed\firebase-firestore-ktx-24.1.0\AndroidManifest.xml:11:5-19:19
@@ -205,46 +205,66 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\disah\.gradle\cach
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:15:9-48
-activity#com.example.restaurent.screen.CartActivity
+activity#com.example.restaurent.screen.OrderPlaceActivity
 ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:16:9-20:55
 	android:label
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:19:13-56
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:19:13-63
 	android:exported
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:18:13-37
 	android:theme
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:20:13-52
 	android:name
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:17:13-48
-activity#com.example.restaurent.ItemDetails
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:17:13-54
+activity#com.example.restaurent.screen.ListActivity
 ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:21:9-25:55
 	android:label
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:24:13-64
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:24:13-56
 	android:exported
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:23:13-37
 	android:theme
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:25:13-52
 	android:name
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:22:13-40
-activity#com.example.restaurent.MainActivity
-ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:26:9-36:20
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:22:13-48
+activity#com.example.restaurent.screen.CartActivity
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:26:9-30:55
 	android:label
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:29:13-56
 	android:exported
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:28:13-37
 	android:theme
 		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:30:13-52
 	android:name
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:27:13-48
+activity#com.example.restaurent.screen.ItemDetails
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:31:9-35:55
+	android:label
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:34:13-64
+	android:exported
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:33:13-37
+	android:theme
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:35:13-52
+	android:name
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:32:13-47
+activity#com.example.restaurent.MainActivity
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:36:9-46:20
+	android:label
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:39:13-45
+	android:exported
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:38:13-36
+	android:theme
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:40:13-52
+	android:name
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:37:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from G:\projectjp\project\app\src\main\AndroidManifest.xml:44:27-74
 uses-sdk
 INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\projectjp\project\app\src\main\AndroidManifest.xml

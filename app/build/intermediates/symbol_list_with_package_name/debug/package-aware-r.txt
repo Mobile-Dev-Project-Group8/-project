@@ -78,6 +78,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color ic_launcher_background
 color notification_action_color_filter
 color notification_icon_bg_color
 color purple_200
@@ -86,6 +87,7 @@ color purple_700
 color teal_200
 color teal_700
 color triangle_color
+color ttt
 color vector_tint_color
 color vector_tint_theme_color
 color white
@@ -135,6 +137,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable fastfood
+drawable food
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_100tb
@@ -142,7 +145,6 @@ drawable ic_bell
 drawable ic_dotmenu
 drawable ic_grid
 drawable ic_igtv
-drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_profile
 drawable ic_reels
@@ -294,6 +296,7 @@ layout notification_template_part_time
 menu example_menu
 menu example_menu2
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string androidx_startup
 string app_name
@@ -339,6 +342,8 @@ string tab
 string template_percent
 string title_activity_cart
 string title_activity_item_details
+string title_activity_list
+string title_activity_order_place
 style DialogWindowTheme
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info

@@ -1,10 +1,13 @@
 package com.example.restaurent.screen
 
+import android.app.Activity
+import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.CircleShape
@@ -21,6 +24,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
@@ -29,8 +33,11 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.example.restaurant.model.ImageWithText
+import com.example.restaurent.MainActivity
 import com.example.restaurent.R
+import com.example.restaurent.ScreenNavigate
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
@@ -40,7 +47,7 @@ import com.google.firebase.ktx.Firebase
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun ProfileScreen(){
+fun ProfileScreen(navController: NavController,){
     var selectedTabIntex by remember {
         mutableStateOf(0)
     }
@@ -61,6 +68,8 @@ fun ProfileScreen(){
     }
 
     val firestore = FirebaseFirestore.getInstance()
+    val activity = (LocalContext.current as? Activity)
+    val context = LocalContext.current
 
 
 //    firestore.collection("users").document(Firebase.auth.uid.toString()).get().addOnCompleteListener {
@@ -184,6 +193,29 @@ fun ProfileScreen(){
         }
         //Text(text = tarea)
 
+        Spacer(Modifier.size(16.dp))
+        Row(
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            modifier = Modifier.fillMaxWidth()
+        ){
+            ActionButton(
+                text = "LogOut",
+                modifier = Modifier
+                    .defaultMinSize(95.dp)
+                    .height(30.dp)
+                    .clickable {
+                        Firebase.auth.signOut()
+
+
+                        val intent = Intent(context, MainActivity::class.java)
+                        context.startActivity(intent)
+                        activity?.finish()
+
+                    }
+            )
+        }
+
+
 
     }
 }
@@ -231,7 +263,7 @@ fun ProfileSection(){
                 .padding(horizontal = 20.dp)
         ) {
             RoundImage(
-                image = painterResource(id = R.drawable.ic_launcher_background),
+                image = painterResource(id = R.drawable.food),
                 modifier = Modifier
                     .size(100.dp)
                     .weight(3f)
@@ -318,8 +350,3 @@ fun ActionButton(
 
 
 
-@Composable
-@Preview
-fun ProfilePreview() {
-    ProfileScreen()
-}

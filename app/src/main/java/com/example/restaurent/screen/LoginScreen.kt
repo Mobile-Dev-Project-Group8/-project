@@ -24,6 +24,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.restaurent.LoginScreenViewModel
 import com.example.restaurent.MainScreen
 import com.example.restaurent.ScreenNavigate
+import com.example.restaurent.ui.theme.orange
 import com.example.restaurent.util.LoadingState
 
 
@@ -149,7 +150,7 @@ fun LoginScreen(
                 Text(text = "Login", color = Color.White)
             },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue)
+            colors = ButtonDefaults.buttonColors(backgroundColor = orange),
         )
         Spacer(Modifier.size(16.dp))
         Row(
@@ -204,11 +205,14 @@ fun LoginScreen(
 
             }
             LoadingState.Status.FAILED -> {
-                Toast.makeText(
-                    context,
-                    ""+state.msg,
-                    Toast.LENGTH_SHORT
-                ).show()
+                LaunchedEffect(Unit) {
+                    Toast.makeText(
+                        context,
+                        ""+state.msg,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                   }
+
 
                 Text(text = state.msg ?: "Error")
             }
