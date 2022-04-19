@@ -1,5 +1,6 @@
 package com.example.restaurent.screen
 
+import android.app.Activity
 import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -47,11 +48,13 @@ import kotlinx.coroutines.flow.asStateFlow
 
 @Composable
 fun CardScreen (
+
     restaurentViewModel: CartViewModel = viewModel(
         factory = CartViewModelFactory(RestaurentRepo())
     )
 
 ){
+
     when (val booksList = restaurentViewModel.recipesStateFlow.asStateFlow().collectAsState().value) {
 
         is OnError -> {
@@ -193,6 +196,7 @@ fun NextButtonWithTotalItems() {
         Divider(color = lightGrey, thickness = 2.dp)
         Spacer(modifier = Modifier.padding(8.dp))
         val context = LocalContext.current
+        val activity = (LocalContext.current as? Activity)
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -216,6 +220,7 @@ fun NextButtonWithTotalItems() {
             onClick = {
                 val intent = Intent(context, OrderPlaceActivity::class.java)
                 context.startActivity(intent)
+                activity?.finish()
             },
             colors = ButtonDefaults.buttonColors(backgroundColor = orange),
             modifier = Modifier

@@ -1,5 +1,6 @@
 package com.example.restaurent.screen
 
+import android.app.Activity
 import android.content.Intent
 import android.widget.Toast
 import androidx.compose.foundation.clickable
@@ -24,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
 import androidx.navigation.NavController
+import com.example.restaurent.MainActivity
 import com.example.restaurent.ScreenNavigate
 import com.example.restaurent.ui.theme.lightGrey
 import com.example.restaurent.ui.theme.orange
@@ -49,6 +51,7 @@ fun OrderPlace (navController: NavController,){
     var tarea by remember {
         mutableStateOf("")
     }
+    val activity = (LocalContext.current as? Activity)
 
     val database: FirebaseDatabase = FirebaseDatabase.getInstance()
     val reference: DatabaseReference = database.getReference("users")
@@ -208,7 +211,11 @@ fun OrderPlace (navController: NavController,){
                             pErrorState.value = false
                             Toast.makeText(context, "Order place Success", Toast.LENGTH_SHORT).show()
 
-                           
+                            val intent = Intent(context, ListActivity::class.java)
+                            context.startActivity(intent)
+                            activity?.finish()
+
+
                         }
                     }
 

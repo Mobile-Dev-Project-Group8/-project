@@ -1,5 +1,6 @@
 package com.example.restaurent.screen
 
+import android.app.Activity
 import android.content.Intent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.animateDpAsState
@@ -81,6 +82,7 @@ fun RecipeListScreen(
 @Composable
 fun RecipeDetails(book: Recipe) {
     val context = LocalContext.current
+    val activity = (LocalContext.current as? Activity)
 
     var showBookDescription by remember { mutableStateOf(false) }
     val bookCoverImageSize by animateDpAsState(
@@ -97,6 +99,7 @@ fun RecipeDetails(book: Recipe) {
         intent.putExtra("Price", ""+book.price)
 
         context.startActivity(intent)
+        activity?.finish()
 
 
         //navController.navigate(route = BottomBarScreen.ListDetails.route )
