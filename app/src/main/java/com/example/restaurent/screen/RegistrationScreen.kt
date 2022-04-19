@@ -28,6 +28,7 @@ import androidx.navigation.NavController
 import com.example.restaurent.LoginScreenViewModel
 import com.example.restaurent.ScreenNavigate
 import com.example.restaurent.model.User
+import com.example.restaurent.ui.theme.orange
 import com.example.restaurent.util.LoadingState
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
@@ -310,7 +311,7 @@ fun RegistrationScreen(
                 Text(text = "Register", color = Color.White)
             },
             modifier = Modifier.fillMaxWidth(),
-            colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue)
+            colors = ButtonDefaults.buttonColors(backgroundColor = orange)
         )
         Spacer(Modifier.size(16.dp))
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center) {
