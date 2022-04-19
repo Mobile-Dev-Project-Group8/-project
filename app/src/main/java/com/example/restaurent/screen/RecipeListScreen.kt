@@ -2,6 +2,7 @@ package com.example.restaurent.screen
 
 import android.app.Activity
 import android.content.Intent
+import android.widget.Toast
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.clickable
@@ -26,11 +27,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.restaurent.R
+import com.example.restaurent.ScreenNavigate
 import com.example.restaurent.model.Recipe
 import com.example.restaurent.repo.RestaurentRepo
 import com.example.restaurent.util.OnError
 import com.example.restaurent.util.OnSuccess
 import com.example.restaurent.viewmodel.RestaurentViewModel
+import com.google.firebase.auth.FirebaseAuth
 import com.skydoves.landscapist.glide.GlideImage
 import kotlinx.coroutines.flow.asStateFlow
 
@@ -91,15 +94,24 @@ fun RecipeDetails(book: Recipe) {
     )
 
     Column(modifier = Modifier.clickable {
-        val intent = Intent(context, ItemDetails::class.java)
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            val intent = Intent(context, ItemDetails::class.java)
 
-        intent.putExtra("Name", ""+book.name)
-        intent.putExtra("Des", ""+book.des)
-        intent.putExtra("ImageUrl", ""+book.imageURL)
-        intent.putExtra("Price", ""+book.price)
+            intent.putExtra("Name", ""+book.name)
+            intent.putExtra("Des", ""+book.des)
+            intent.putExtra("ImageUrl", ""+book.imageURL)
+            intent.putExtra("Price", ""+book.price)
 
-        context.startActivity(intent)
-        activity?.finish()
+            context.startActivity(intent)
+            activity?.finish()
+
+
+        } else {
+            Toast.makeText(context, "Please Login ", Toast.LENGTH_SHORT).show()
+
+        }
+       
 
 
         //navController.navigate(route = BottomBarScreen.ListDetails.route )

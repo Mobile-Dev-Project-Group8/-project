@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -31,7 +32,9 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.restaurent.MainActivity
 import com.example.restaurent.R
+import com.example.restaurent.ScreenNavigate
 import com.example.restaurent.model.Cart
 import com.example.restaurent.model.Recipe
 import com.example.restaurent.repo.RestaurentRepo
@@ -43,6 +46,7 @@ import com.example.restaurent.util.OnError
 import com.example.restaurent.util.OnSuccess
 import com.example.restaurent.viewmodel.CartViewModel
 import com.example.restaurent.viewmodel.RestaurentViewModel
+import com.google.firebase.auth.FirebaseAuth
 import com.skydoves.landscapist.glide.GlideImage
 import kotlinx.coroutines.flow.asStateFlow
 
@@ -54,50 +58,107 @@ fun CardScreen (
     )
 
 ){
+    val activity = (LocalContext.current as? Activity)
+    val context = LocalContext.current
 
-    when (val booksList = restaurentViewModel.recipesStateFlow.asStateFlow().collectAsState().value) {
+    val user = FirebaseAuth.getInstance().currentUser
+    if (user != null) {
+        when (val booksList = restaurentViewModel.recipesStateFlow.asStateFlow().collectAsState().value) {
 
-        is OnError -> {
-            Text(text = "Please try after sometime")
-        }
+            is OnError -> {
+                Text(text = "Please try after sometime")
+            }
 
-        is OnSuccess -> {
-            val listOfBooks = booksList.querySnapshot?.toObjects(Cart::class.java)
-            listOfBooks?.let {
-                Column {
-                    Text(
-                        text = "Cart",
-                        style = TextStyle(fontSize = 28.sp, fontWeight = FontWeight.ExtraBold),
-                        modifier = Modifier.padding(16.dp)
-                    )
+            is OnSuccess -> {
+                val listOfBooks = booksList.querySnapshot?.toObjects(Cart::class.java)
+                if ( listOfBooks?.size!=0){
+                    listOfBooks?.let {
+                        Column {
+                            Text(
+                                text = "Cart",
+                                style = TextStyle(fontSize = 28.sp, fontWeight = FontWeight.ExtraBold),
+                                modifier = Modifier.padding(16.dp)
+                            )
 
-                    LazyColumn(modifier = Modifier.height(400.dp)) {
-                        items(listOfBooks) {
+                            LazyColumn(modifier = Modifier.height(400.dp)) {
+                                items(listOfBooks) {
 
-                            Card(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .padding(16.dp),
-                                shape = RoundedCornerShape(16.dp)
-                            ) {
+                                    Card(
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .padding(16.dp),
+                                        shape = RoundedCornerShape(16.dp)
+                                    ) {
 
-                                    CartDetails(it)
-
-
+                                        CartDetails(it)
 
 
+
+
+                                    }
+                                }
                             }
+                            Spacer(modifier = Modifier.padding(20.dp))
+                            NextButtonWithTotalItems()
+
+
+
                         }
                     }
-                    Spacer(modifier = Modifier.padding(20.dp))
-                    NextButtonWithTotalItems()
-                   
+
+                }else{
+                    Column(
+                        modifier = Modifier.fillMaxSize(),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Text(text = "Click",
+                            modifier = Modifier.clickable {
+                                val intent = Intent(context, ListActivity::class.java)
+                                context.startActivity(intent)
+                                activity?.finish()
+
+                            }
+                                .background(color = Color.Yellow)
+                        )
+
+                    }
+
 
 
                 }
+
+
             }
         }
+
+
+
+    } else {
+        Spacer(Modifier.size(16.dp))
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
+            ActionButton(
+                text = "Login",
+                modifier = Modifier
+                    .defaultMinSize(95.dp)
+                    .height(30.dp)
+                    .clickable {
+                        val intent = Intent(context, MainActivity::class.java)
+                        context.startActivity(intent)
+                        activity?.finish()
+
+                    }
+            )
+        }
+
+
     }
+
+
 
 
 }

@@ -2,6 +2,7 @@ package com.example.restaurent.screen
 
 import android.widget.Toast
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material.*
@@ -52,6 +53,16 @@ fun LoginScreen(
                 .padding(16.dp),
            
         ) {
+            Text(text = "Skip Login",  fontWeight = FontWeight.Normal,
+                color = Color.Blue,
+                fontSize = 22.sp,
+                modifier = Modifier.clickable {
+                    navController.navigate(route = ScreenNavigate.MainScreen1.route )
+
+                },
+                textAlign = TextAlign.Center,)
+            Spacer(Modifier.size(16.dp))
+
             Text(text = "Welcome",  fontWeight = FontWeight.Bold,
                 color = Color.Black,
                 fontSize = 32.sp,

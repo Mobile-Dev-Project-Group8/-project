@@ -31,10 +31,13 @@ import com.example.restaurent.ui.theme.lightGrey
 import com.example.restaurent.ui.theme.orange
 import com.example.restaurent.ui.theme.titleTextColor
 import com.example.restaurent.ui.theme.white
+import com.example.restaurent.util.OnError
+import com.example.restaurent.util.OnSuccess
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
 @Composable
@@ -206,6 +209,17 @@ fun OrderPlace (navController: NavController,){
                         }
 
                         else -> {
+                            val firestore = FirebaseFirestore.getInstance()
+
+
+
+                            firestore.collection("cart").document(Firebase.auth.uid.toString())
+                               .collection("cart").get().addOnCompleteListener {
+                                   it.result.forEach {
+                                       it.reference.delete()
+                                   }
+
+                               }
 
                             locationErrorState.value = false
                             pErrorState.value = false
