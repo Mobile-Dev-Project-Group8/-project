@@ -14,6 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Restaurent">
         <activity
+            android:name=".screen.OrderPlaceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_order_place"
+            android:theme="@style/Theme.Restaurent" />
+        <activity
             android:name=".screen.ListActivity"
             android:exported="false"
             android:label="@string/title_activity_list"

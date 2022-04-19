@@ -36,4 +36,5 @@ string project_id
 string title_activity_cart
 string title_activity_item_details
 string title_activity_list
+string title_activity_order_place
 style Theme.Restaurent

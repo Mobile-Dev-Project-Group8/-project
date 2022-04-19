@@ -1,5 +1,6 @@
 package com.example.restaurent.screen
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -7,10 +8,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
+import androidx.compose.material.*
 import androidx.compose.material.SnackbarDefaults.backgroundColor
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
@@ -19,6 +18,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
@@ -34,8 +34,10 @@ import com.example.restaurent.R
 import com.example.restaurent.model.Cart
 import com.example.restaurent.model.Recipe
 import com.example.restaurent.repo.RestaurentRepo
+import com.example.restaurent.ui.theme.lightGrey
 import com.example.restaurent.ui.theme.orange
 import com.example.restaurent.ui.theme.titleTextColor
+import com.example.restaurent.ui.theme.white
 import com.example.restaurent.util.OnError
 import com.example.restaurent.util.OnSuccess
 import com.example.restaurent.viewmodel.CartViewModel
@@ -66,7 +68,7 @@ fun CardScreen (
                         modifier = Modifier.padding(16.dp)
                     )
 
-                    LazyColumn(modifier = Modifier.fillMaxHeight()) {
+                    LazyColumn(modifier = Modifier.height(400.dp)) {
                         items(listOfBooks) {
 
                             Card(
@@ -84,6 +86,8 @@ fun CardScreen (
                             }
                         }
                     }
+                    Spacer(modifier = Modifier.padding(20.dp))
+                    NextButtonWithTotalItems()
                    
 
 
@@ -180,6 +184,58 @@ fun CartDetails(cart: Cart) {
         }
     }
 
+}
+
+
+@Composable
+fun NextButtonWithTotalItems() {
+    Column(modifier = Modifier.fillMaxWidth().padding(20.dp)) {
+        Divider(color = lightGrey, thickness = 2.dp)
+        Spacer(modifier = Modifier.padding(8.dp))
+        val context = LocalContext.current
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "3 Items",
+                fontSize = 14.sp,
+                color = Color.Black
+            )
+
+            Text(
+                text = "$650.00",
+                fontSize = 18.sp,
+                color = titleTextColor,
+                fontWeight = FontWeight.Bold
+            )
+        }
+
+        Button(
+            onClick = {
+                val intent = Intent(context, OrderPlaceActivity::class.java)
+                context.startActivity(intent)
+            },
+            colors = ButtonDefaults.buttonColors(backgroundColor = orange),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(
+                    top = 30.dp,
+                    bottom = 34.dp
+                )
+                .align(Alignment.CenterHorizontally),
+            shape = RoundedCornerShape(14.dp)
+        ) {
+            Text(
+                text = "Next",
+                color = white,
+                style = MaterialTheme.typography.button,
+                modifier = Modifier.padding(top = 8.dp, bottom = 8.dp)
+            )
+        }
+
+    }
 }
 
 class CartViewModelFactory(private val restaurentRepo: RestaurentRepo) : ViewModelProvider.Factory {

@@ -166,6 +166,7 @@
     <string name="title_activity_cart">CartActivity</string>
     <string name="title_activity_item_details">ItemDetails</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_order_place">OrderPlaceActivity</string>
     <style name="DialogWindowTheme">
         <item name="android:windowClipToOutline">false</item>
     </style>

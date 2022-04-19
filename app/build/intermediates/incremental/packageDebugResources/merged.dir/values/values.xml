@@ -20,6 +20,7 @@
     <string name="title_activity_cart">CartActivity</string>
     <string name="title_activity_item_details">ItemDetails</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_order_place">OrderPlaceActivity</string>
     <style name="Theme.Restaurent" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/purple_700</item>
     </style>
