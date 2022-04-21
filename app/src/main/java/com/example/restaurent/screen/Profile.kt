@@ -38,6 +38,7 @@ import com.example.restaurant.model.ImageWithText
 import com.example.restaurent.MainActivity
 import com.example.restaurent.R
 import com.example.restaurent.ScreenNavigate
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
@@ -70,143 +71,163 @@ fun ProfileScreen(navController: NavController,){
     val firestore = FirebaseFirestore.getInstance()
     val activity = (LocalContext.current as? Activity)
     val context = LocalContext.current
+    val user = FirebaseAuth.getInstance().currentUser
+    if (user != null) {
+        val database: FirebaseDatabase = FirebaseDatabase.getInstance()
+        val reference: DatabaseReference = database.getReference("users")
+        reference.child(Firebase.auth.uid.toString()).get()
+            .addOnCompleteListener {
+                if(it.isSuccessful){
+                    val dataSnapshot: DataSnapshot  = it.result
+                    //name =dataSnapshot.child("name").value.toString()
+                    selectedname =dataSnapshot.child("name").value.toString()
+                    temail =dataSnapshot.child("email").value.toString()
+                    tmobile =dataSnapshot.child("mobile").value.toString()
+                    tcountry =dataSnapshot.child("country").value.toString()
+                    tarea =dataSnapshot.child("address").value.toString()
 
 
-//    firestore.collection("users").document(Firebase.auth.uid.toString()).get().addOnCompleteListener {
-//        if(it.isSuccessful){
-//            name1 = it.result["name"].toString()
-//        }
-//
-//    }
-    val database: FirebaseDatabase = FirebaseDatabase.getInstance()
-    val reference: DatabaseReference = database.getReference("users")
-    reference.child(Firebase.auth.uid.toString()).get()
-        .addOnCompleteListener {
-            if(it.isSuccessful){
-                val dataSnapshot: DataSnapshot  = it.result
-                //name =dataSnapshot.child("name").value.toString()
-                selectedname =dataSnapshot.child("name").value.toString()
-                temail =dataSnapshot.child("email").value.toString()
-                tmobile =dataSnapshot.child("mobile").value.toString()
-                tcountry =dataSnapshot.child("country").value.toString()
-                tarea =dataSnapshot.child("address").value.toString()
 
+                }
+            }
+        Log.d("name",selectedname)
+
+        Column(modifier = Modifier.fillMaxSize()) {
+            TopBar(name = "Profile",modifier = Modifier.padding(16.dp))
+            Spacer(modifier = Modifier.height(4.dp))
+            ProfileSection()
+            Spacer(modifier = Modifier.height(25.dp))
+
+            Column(
+                // val letterSpacing = 0.5.sp
+                //    val lineHeight = 20.sp
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp)
+            ) {
+                Text(
+                    text = selectedname,
+                    fontWeight = FontWeight.Bold,
+                    letterSpacing = 0.5.sp,
+                    lineHeight = 20.sp
+                )
+                Text(
+                    text = tarea,
+                    letterSpacing = 0.5.sp,
+                    lineHeight = 20.sp
+                )
 
 
             }
+            Spacer(Modifier.size(16.dp))
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.fillMaxWidth()
+            ){
+
+                ActionButton(
+                    text = "Mobile :",
+
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                )
+
+                ActionButton(
+                    text = tmobile,
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                )
+
+            }
+            Spacer(Modifier.size(16.dp))
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.fillMaxWidth()
+            ){
+
+                ActionButton(
+                    text = "Email :",
+
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                )
+
+                ActionButton(
+                    text = temail,
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                )
+
+            }
+            Spacer(Modifier.size(16.dp))
+
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.fillMaxWidth()
+            ){
+
+                ActionButton(
+                    text = "Country :",
+
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                )
+
+                ActionButton(
+                    text = tcountry,
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                )
+
+            }
+            //Text(text = tarea)
+
+            Spacer(Modifier.size(16.dp))
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                modifier = Modifier.fillMaxWidth()
+            ){
+                ActionButton(
+                    text = "LogOut",
+                    modifier = Modifier
+                        .defaultMinSize(95.dp)
+                        .height(30.dp)
+                        .clickable {
+                            Firebase.auth.signOut()
+
+
+                            val intent = Intent(context, MainActivity::class.java)
+                            context.startActivity(intent)
+                            activity?.finish()
+
+                        }
+                )
+            }
+
+
+
         }
-    Log.d("name",selectedname)
 
-    Column(modifier = Modifier.fillMaxSize()) {
-        TopBar(name = "Profile",modifier = Modifier.padding(16.dp))
-        Spacer(modifier = Modifier.height(4.dp))
-        ProfileSection()
-        Spacer(modifier = Modifier.height(25.dp))
 
+    } else {
+        Spacer(Modifier.size(16.dp))
         Column(
-            // val letterSpacing = 0.5.sp
-            //    val lineHeight = 20.sp
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 20.dp)
-        ) {
-            Text(
-                text = selectedname,
-                fontWeight = FontWeight.Bold,
-                letterSpacing = 0.5.sp,
-                lineHeight = 20.sp
-            )
-            Text(
-                text = tarea,
-                letterSpacing = 0.5.sp,
-                lineHeight = 20.sp
-            )
-
-
-        }
-        Spacer(Modifier.size(16.dp))
-        Row(
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            modifier = Modifier.fillMaxWidth()
-        ){
-
-            ActionButton(
-                text = "Mobile :",
-
-                modifier = Modifier
-                    .defaultMinSize(95.dp)
-                    .height(30.dp)
-            )
-
-            ActionButton(
-                text = tmobile,
-                modifier = Modifier
-                    .defaultMinSize(95.dp)
-                    .height(30.dp)
-            )
-
-        }
-        Spacer(Modifier.size(16.dp))
-        Row(
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            modifier = Modifier.fillMaxWidth()
-        ){
-
-            ActionButton(
-                text = "Email :",
-
-                modifier = Modifier
-                    .defaultMinSize(95.dp)
-                    .height(30.dp)
-            )
-
-            ActionButton(
-                text = temail,
-                modifier = Modifier
-                    .defaultMinSize(95.dp)
-                    .height(30.dp)
-            )
-
-        }
-        Spacer(Modifier.size(16.dp))
-
-        Row(
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            modifier = Modifier.fillMaxWidth()
-        ){
-
-            ActionButton(
-                text = "Country :",
-
-                modifier = Modifier
-                    .defaultMinSize(95.dp)
-                    .height(30.dp)
-            )
-
-            ActionButton(
-                text = tcountry,
-                modifier = Modifier
-                    .defaultMinSize(95.dp)
-                    .height(30.dp)
-            )
-
-        }
-        //Text(text = tarea)
-
-        Spacer(Modifier.size(16.dp))
-        Row(
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
         ){
             ActionButton(
-                text = "LogOut",
+                text = "Login",
                 modifier = Modifier
                     .defaultMinSize(95.dp)
                     .height(30.dp)
                     .clickable {
-                        Firebase.auth.signOut()
-
-
                         val intent = Intent(context, MainActivity::class.java)
                         context.startActivity(intent)
                         activity?.finish()
@@ -215,9 +236,16 @@ fun ProfileScreen(navController: NavController,){
             )
         }
 
-
-
     }
+
+
+//    firestore.collection("users").document(Firebase.auth.uid.toString()).get().addOnCompleteListener {
+//        if(it.isSuccessful){
+//            name1 = it.result["name"].toString()
+//        }
+//
+//    }
+
 }
 
 @Composable
