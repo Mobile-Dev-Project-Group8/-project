@@ -39,7 +39,7 @@ fun MyContent(){
 
     var mExpanded by remember { mutableStateOf(false) }
 
-    val mCities = listOf("English", "English", "Spanish", "German" )
+    val mCities = listOf("English", "Finnish", "Spanish", "German" )
 
     var mSelectedText by remember { mutableStateOf("") }
 
