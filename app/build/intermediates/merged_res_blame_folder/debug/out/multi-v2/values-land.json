@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\projectjp\\project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\c68e50baaafb0cadbc07a5b796af34c1\\transformed\\ui-1.1.1\\res\\values-land\\values-land.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/d463e2dba38b3baaae6da8079bf7b141/transformed/ui-1.1.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

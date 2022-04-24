@@ -1,122 +1,122 @@
 [
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_ic_grid.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/ic_grid.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_dotmenu.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_dotmenu.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_ic_reels.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/ic_reels.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_ic_dotmenu.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/ic_dotmenu.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_menu.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\menu.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_menu.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/menu.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_restaurent.jpg.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\restaurent.jpg"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_ic_profile.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/ic_profile.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_cart.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\cart.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_ic_igtv.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/ic_igtv.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_grid.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_grid.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_bell.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_bell.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_fastfood.jpg.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\fastfood.jpg"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_food.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/food.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable-v24_picture.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable-v24/picture.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_profile.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_profile.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_fastfood.jpg.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/fastfood.jpg"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_food.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\food.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_igtv.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_igtv.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_cart.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/cart.png"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_reels.xml.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable\\ic_reels.xml"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_restaurent.jpg.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/restaurent.jpg"
     },
     {
-        "merged": "G:\\projectjp\\project\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_picture.png.flat",
-        "source": "G:\\projectjp\\project\\app\\src\\main\\res\\drawable-v24\\picture.png"
+        "merged": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/merged_res/debug/drawable_ic_bell.png.flat",
+        "source": "/Users/s.chapal/Documents/GitHub/project/app/src/main/res/drawable/ic_bell.png"
     }
 ]

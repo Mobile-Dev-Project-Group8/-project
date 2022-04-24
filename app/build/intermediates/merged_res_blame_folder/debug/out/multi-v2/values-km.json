@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\projectjp\\project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-km\\values-km.xml",
+            "outputFile": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\06447e937f7dbca2aae39558200bc2b0\\transformed\\core-1.7.0\\res\\values-km\\values-km.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/d463e2dba38b3baaae6da8079bf7b141/transformed/ui-1.1.1/res/values-km/values-km.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,190,270,374,472,560,644,748,833,920,985,1050,1126,1192",
+                        "endColumns": "84,79,103,97,87,83,103,84,86,64,64,75,65,117",
+                        "endOffsets": "185,265,369,467,555,639,743,828,915,980,1045,1121,1187,1305"
                     },
                     "to": {
-                        "startLines": "32",
-                        "startColumns": "4",
-                        "startOffsets": "3347",
-                        "endColumns": "100",
-                        "endOffsets": "3443"
+                        "startLines": "2,3,22,23,24,25,26,27,28,29,30,31,33,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,190,2491,2595,2693,2781,2865,2969,3054,3141,3206,3271,3448,3514",
+                        "endColumns": "84,79,103,97,87,83,103,84,86,64,64,75,65,117",
+                        "endOffsets": "185,265,2590,2688,2776,2860,2964,3049,3136,3201,3266,3342,3509,3627"
                     }
                 },
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\34b1b6eabb8091dfb99bae62dc8cac7f\\transformed\\play-services-base-18.0.1\\res\\values-km\\values.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/55f947e24b49e094bea9f9f1e7f2c429/transformed/play-services-base-18.0.1/res/values-km/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\64a6808625cbf9996ea0c02d1a73d199\\transformed\\play-services-basement-18.0.0\\res\\values-km\\values.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/a0581fbd7d481d5260050b97708747d8/transformed/core-1.7.0/res/values-km/values-km.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "32",
+                        "startColumns": "4",
+                        "startOffsets": "3347",
+                        "endColumns": "100",
+                        "endOffsets": "3443"
+                    }
+                },
+                {
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/fe866c96d410a02d8aa92b0fbbf6a04c/transformed/play-services-basement-18.0.0/res/values-km/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,23 +69,6 @@
                         "startOffsets": "1269",
                         "endColumns": "148",
                         "endOffsets": "1413"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\c68e50baaafb0cadbc07a5b796af34c1\\transformed\\ui-1.1.1\\res\\values-km\\values-km.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,190,270,374,472,560,644,748,833,920,985,1050,1126,1192",
-                        "endColumns": "84,79,103,97,87,83,103,84,86,64,64,75,65,117",
-                        "endOffsets": "185,265,369,467,555,639,743,828,915,980,1045,1121,1187,1305"
-                    },
-                    "to": {
-                        "startLines": "2,3,22,23,24,25,26,27,28,29,30,31,33,34",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,190,2491,2595,2693,2781,2865,2969,3054,3141,3206,3271,3448,3514",
-                        "endColumns": "84,79,103,97,87,83,103,84,86,64,64,75,65,117",
-                        "endOffsets": "185,265,2590,2688,2776,2860,2964,3049,3136,3201,3266,3342,3509,3627"
                     }
                 }
             ]

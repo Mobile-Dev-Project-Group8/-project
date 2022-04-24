@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\projectjp\\project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
+            "outputFile": "/Users/s.chapal/Documents/GitHub/project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\c68e50baaafb0cadbc07a5b796af34c1\\transformed\\ui-1.1.1\\res\\values-th\\values-th.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,191,268,365,466,554,639,741,827,910,975,1041,1114,1181",
-                        "endColumns": "85,76,96,100,87,84,101,85,82,64,65,72,66,122",
-                        "endOffsets": "186,263,360,461,549,634,736,822,905,970,1036,1109,1176,1299"
-                    },
-                    "to": {
-                        "startLines": "2,3,22,23,24,25,26,27,28,29,30,31,33,34",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,191,2392,2489,2590,2678,2763,2865,2951,3034,3099,3165,3339,3406",
-                        "endColumns": "85,76,96,100,87,84,101,85,82,64,65,72,66,122",
-                        "endOffsets": "186,263,2484,2585,2673,2758,2860,2946,3029,3094,3160,3233,3401,3524"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\64a6808625cbf9996ea0c02d1a73d199\\transformed\\play-services-basement-18.0.0\\res\\values-th\\values.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/fe866c96d410a02d8aa92b0fbbf6a04c/transformed/play-services-basement-18.0.0/res/values-th/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\34b1b6eabb8091dfb99bae62dc8cac7f\\transformed\\play-services-base-18.0.1\\res\\values-th\\values.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/55f947e24b49e094bea9f9f1e7f2c429/transformed/play-services-base-18.0.1/res/values-th/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\disah\\.gradle\\caches\\transforms-3\\06447e937f7dbca2aae39558200bc2b0\\transformed\\core-1.7.0\\res\\values-th\\values-th.xml",
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/d463e2dba38b3baaae6da8079bf7b141/transformed/ui-1.1.1/res/values-th/values-th.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,191,268,365,466,554,639,741,827,910,975,1041,1114,1181",
+                        "endColumns": "85,76,96,100,87,84,101,85,82,64,65,72,66,122",
+                        "endOffsets": "186,263,360,461,549,634,736,822,905,970,1036,1109,1176,1299"
+                    },
+                    "to": {
+                        "startLines": "2,3,22,23,24,25,26,27,28,29,30,31,33,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,191,2392,2489,2590,2678,2763,2865,2951,3034,3099,3165,3339,3406",
+                        "endColumns": "85,76,96,100,87,84,101,85,82,64,65,72,66,122",
+                        "endOffsets": "186,263,2484,2585,2673,2758,2860,2946,3029,3094,3160,3233,3401,3524"
+                    }
+                },
+                {
+                    "source": "/Users/s.chapal/.gradle/caches/transforms-3/a0581fbd7d481d5260050b97708747d8/transformed/core-1.7.0/res/values-th/values-th.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

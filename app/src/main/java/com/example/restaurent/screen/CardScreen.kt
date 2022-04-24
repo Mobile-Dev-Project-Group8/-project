@@ -63,9 +63,9 @@ fun CardScreen (
     var totalItem by remember {
         mutableStateOf("")
     }
-//    var totalSum by remember {
-//        mutableStateOf(0)
-//    }
+    var totalSum by remember {
+        mutableStateOf(0)
+    }
 
     val activity = (LocalContext.current as? Activity)
     val context = LocalContext.current
@@ -84,7 +84,7 @@ fun CardScreen (
                     val ppp = price.toInt()
 
 
-                   // totalSum += ppp
+                    totalSum += ppp
 
                 }
 
